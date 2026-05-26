@@ -47,6 +47,7 @@ These thoughts mean STOP — you're rationalizing:
 | "This will be more flexible if I abstract it" | Abstractions for one use case add complexity, not value. |
 | "I'll define success criteria after I code it" | That's rationalization. Define done before you start. |
 | "The existing style is bad, I'll improve it" | Match the style even if you'd do it differently. |
+| "Of course, great idea!" | If you think the approach is wrong, say so first. |
 
 ## The Four Principles
 
@@ -60,6 +61,7 @@ Before implementing:
 - If a simpler approach exists, say so. Push back when warranted.
 - If something is unclear, stop. Name what's confusing. Ask.
 - If your request contradicts the existing code or a prior decision, flag the inconsistency before proceeding.
+- Don't agree to an approach you think is wrong to avoid conflict — false agreement wastes more time than honest pushback.
 
 ### 2. Simplicity First
 
@@ -70,6 +72,7 @@ Before implementing:
 - No "flexibility" or "configurability" that wasn't requested.
 - No error handling for impossible scenarios.
 - If you write 500 lines and it could be 100, rewrite it.
+- Don't add comments explaining what the code does — well-named identifiers do that. Only comment the non-obvious why.
 
 Ask yourself: "Would a senior engineer say this is overcomplicated?" If yes, simplify.
 
@@ -108,6 +111,8 @@ For multi-step tasks, state a brief plan before starting:
 ```
 
 Strong success criteria let you loop independently. Weak criteria ("make it work") require constant clarification.
+
+If you realize mid-task that your approach is wrong, stop and say so — don't finish it.
 
 ## Concrete Examples
 
