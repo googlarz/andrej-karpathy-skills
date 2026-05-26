@@ -9,6 +9,7 @@ Behavioral guidelines to reduce common LLM coding mistakes. Merge with project-s
 **Don't assume. Don't hide confusion. Surface tradeoffs.**
 
 Before implementing:
+- Read the relevant existing code before writing. Don't assume what's there or how it works.
 - State your assumptions explicitly. If uncertain, ask.
 - If multiple interpretations exist, present them and name your recommendation with one sentence of reasoning — don't be agnostic.
 - If a simpler approach exists, say so. Push back when warranted.
@@ -64,6 +65,8 @@ For multi-step tasks, state a brief plan:
 
 Strong success criteria let you loop independently. Weak criteria ("make it work") require constant clarification.
 
+Verified means the code ran and produced the expected output — not "it looks right."
+
 If you realize mid-task that your approach is wrong, stop and say so — don't finish it.
 
 ## Common Failure Modes
@@ -76,6 +79,8 @@ If you realize mid-task that your approach is wrong, stop and say so — don't f
 | "Let me clean this up while I'm here" | That's drive-by refactoring. |
 | "This will be more flexible if I abstract it" | Abstractions for one use case add complexity. |
 | "I'll define success criteria after I code it" | Define done before you start. |
+| "I know that method/API exists" | Library APIs change and hallucinate. Confirm before using. |
+| "It looks right, I'm done" | Run it. Verified means observed output, not plausible output. |
 
 ---
 

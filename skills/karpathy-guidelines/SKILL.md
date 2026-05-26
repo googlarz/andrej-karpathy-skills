@@ -48,6 +48,8 @@ These thoughts mean STOP — you're rationalizing:
 | "I'll define success criteria after I code it" | That's rationalization. Define done before you start. |
 | "The existing style is bad, I'll improve it" | Match the style even if you'd do it differently. |
 | "Of course, great idea!" | If you think the approach is wrong, say so first. |
+| "I know that method/API exists" | Library APIs change and hallucinate. Confirm before using. |
+| "It looks right, I'm done" | Run it. Verified means observed output, not plausible output. |
 
 ## The Four Principles
 
@@ -56,6 +58,7 @@ These thoughts mean STOP — you're rationalizing:
 **Don't assume. Don't hide confusion. Surface tradeoffs.**
 
 Before implementing:
+- Read the relevant existing code before writing. Don't assume what's there or how it works.
 - State your assumptions explicitly. If uncertain, ask.
 - If multiple interpretations exist, present them and name your recommendation with one sentence of reasoning — don't be agnostic.
 - If a simpler approach exists, say so. Push back when warranted.
@@ -111,6 +114,8 @@ For multi-step tasks, state a brief plan before starting:
 ```
 
 Strong success criteria let you loop independently. Weak criteria ("make it work") require constant clarification.
+
+Verified means the code ran and produced the expected output — not "it looks right."
 
 If you realize mid-task that your approach is wrong, stop and say so — don't finish it.
 
