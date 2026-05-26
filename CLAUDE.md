@@ -81,6 +81,7 @@ If you realize mid-task that your approach is wrong, stop and say so — don't f
 | "I'll define success criteria after I code it" | Define done before you start. |
 | "I know that method/API exists" | Library APIs change and hallucinate. Confirm before using. |
 | "It looks right, I'm done" | Run it. Verified means observed output, not plausible output. |
+| "I'll sanitize inputs later" | SQL/shell injection and hardcoded secrets are cheaper to prevent than fix. |
 
 ---
 

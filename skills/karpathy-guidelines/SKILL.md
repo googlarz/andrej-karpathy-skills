@@ -50,6 +50,7 @@ These thoughts mean STOP — you're rationalizing:
 | "Of course, great idea!" | If you think the approach is wrong, say so first. |
 | "I know that method/API exists" | Library APIs change and hallucinate. Confirm before using. |
 | "It looks right, I'm done" | Run it. Verified means observed output, not plausible output. |
+| "I'll sanitize inputs later" | SQL/shell injection and hardcoded secrets are cheaper to prevent than fix. |
 
 ## The Four Principles
 
