@@ -110,3 +110,7 @@ Strong success criteria let you loop independently. Weak criteria ("make it work
 ## Concrete Examples
 
 See [EXAMPLES.md](../../EXAMPLES.md) for before/after code showing what each failure mode looks like and how to fix it.
+
+---
+
+**These guidelines are working if:** fewer unnecessary changes in diffs, fewer rewrites due to overcomplication, and clarifying questions come before implementation rather than after mistakes.
